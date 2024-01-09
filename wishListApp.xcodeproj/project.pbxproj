@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		274079F62B4C1C2000601AE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274079F52B4C1C2000601AE9 /* AppDelegate.swift */; };
 		274079F82B4C1C2000601AE9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274079F72B4C1C2000601AE9 /* SceneDelegate.swift */; };
 		274079FA2B4C1C2000601AE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274079F92B4C1C2000601AE9 /* ViewController.swift */; };
 		274079FD2B4C1C2000601AE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 274079FB2B4C1C2000601AE9 /* Main.storyboard */; };
 		274079FF2B4C1C2100601AE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 274079FE2B4C1C2100601AE9 /* Assets.xcassets */; };
 		27407A022B4C1C2100601AE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27407A002B4C1C2100601AE9 /* LaunchScreen.storyboard */; };
+		27407A0A2B4D37CE00601AE9 /* WishListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27407A092B4D37CE00601AE9 /* WishListViewController.swift */; };
+		27407A0E2B4D3EE100601AE9 /* RemoteProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27407A0D2B4D3EE100601AE9 /* RemoteProduct.swift */; };
+		27407A162B4D482000601AE9 /* Example.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 27407A122B4D416700601AE9 /* Example.xcdatamodeld */; };
+		27407A172B4D482500601AE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274079F52B4C1C2000601AE9 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		274079FE2B4C1C2100601AE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27407A012B4C1C2100601AE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27407A032B4C1C2100601AE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27407A092B4D37CE00601AE9 /* WishListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListViewController.swift; sourceTree = "<group>"; };
+		27407A0D2B4D3EE100601AE9 /* RemoteProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteProduct.swift; sourceTree = "<group>"; };
+		27407A132B4D416700601AE9 /* Example.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Example.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,34 @@
 		274079F42B4C1C2000601AE9 /* wishListApp */ = {
 			isa = PBXGroup;
 			children = (
+				27407A0C2B4D391500601AE9 /* Model */,
+				27407A0B2B4D38DF00601AE9 /* ViewController */,
 				274079F52B4C1C2000601AE9 /* AppDelegate.swift */,
 				274079F72B4C1C2000601AE9 /* SceneDelegate.swift */,
-				274079F92B4C1C2000601AE9 /* ViewController.swift */,
 				274079FB2B4C1C2000601AE9 /* Main.storyboard */,
 				274079FE2B4C1C2100601AE9 /* Assets.xcassets */,
 				27407A002B4C1C2100601AE9 /* LaunchScreen.storyboard */,
 				27407A032B4C1C2100601AE9 /* Info.plist */,
+				27407A122B4D416700601AE9 /* Example.xcdatamodeld */,
 			);
 			path = wishListApp;
+			sourceTree = "<group>";
+		};
+		27407A0B2B4D38DF00601AE9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				274079F92B4C1C2000601AE9 /* ViewController.swift */,
+				27407A092B4D37CE00601AE9 /* WishListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		27407A0C2B4D391500601AE9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				27407A0D2B4D3EE100601AE9 /* RemoteProduct.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +163,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27407A172B4D482500601AE9 /* AppDelegate.swift in Sources */,
+				27407A0E2B4D3EE100601AE9 /* RemoteProduct.swift in Sources */,
 				274079FA2B4C1C2000601AE9 /* ViewController.swift in Sources */,
-				274079F62B4C1C2000601AE9 /* AppDelegate.swift in Sources */,
+				27407A162B4D482000601AE9 /* Example.xcdatamodeld in Sources */,
+				27407A0A2B4D37CE00601AE9 /* WishListViewController.swift in Sources */,
 				274079F82B4C1C2000601AE9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +327,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -326,6 +355,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -361,6 +391,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		27407A122B4D416700601AE9 /* Example.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				27407A132B4D416700601AE9 /* Example.xcdatamodel */,
+			);
+			currentVersion = 27407A132B4D416700601AE9 /* Example.xcdatamodel */;
+			name = Example.xcdatamodeld;
+			path = ../Example.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 274079EA2B4C1C2000601AE9 /* Project object */;
 }
